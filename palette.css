@@ -1,0 +1,116 @@
+#outerpicker {
+	width: 100%;
+	float: left;
+	margin: 20px 0px 10px 20%;
+	text-align: left;
+}
+
+#colorpicker {
+	margin: 10px 0px 10px 0px;
+}
+
+#color {
+	height: 100px;
+	width: 195px;
+	border-radius: 10px;
+	border: none;
+	padding-left: 10px;
+	font-family: 'Lato', sans-serif;
+}
+
+#palette {
+	width: 100%;
+	float: right;
+}
+
+.remove {
+	display: none;
+	position: absolute;
+	top: 5;
+	right: 5;
+	border-radius: 100%;
+}
+
+.palette_color {
+	height: 23%;
+	width: 40%;
+	margin: 4%;
+	float: left;
+	border: 1px solid black;
+	position: relative;
+}
+
+#name {
+	width: 80%;
+	margin: auto;
+}
+
+#name p {
+	float: left;
+}
+
+#name input {
+	margin: 15px 0px 20px 0px;
+	font-family: 'Lato', sans-serif;
+}
+
+#save_color {
+	margin-left: 40px;
+}
+
+@media(min-width: 768px) {
+	#outerpicker {
+		width: 22%;
+		margin: 40px 20px 40px 20px;
+	}
+	#palette {
+		width: 100%;
+		margin: 20px;
+	}
+	#name {
+		width: 100%;
+	}
+	#palette_form {
+		display: flex;
+   	 	flex-direction: column;
+    	width: 70vw;
+	}
+	#inner {
+		flex-direction: column;
+	}
+}
+@media(min-width: 992px) {
+	#outerpicker {
+		width: 20%;
+		margin: 50px 20px 40px 40px;
+	}
+	#palette {
+		width: 100%;
+	}
+
+	.palette_color {
+		height: 15vw;
+    	width: 15vw;
+		margin: 4%;
+		float: right;
+	}
+}
+@media(min-width: 1200px) {
+	#outerpicker {
+		margin: 50px 0px 0px 5%;
+	}
+	#palette {
+		width: 100%;
+		margin: 20px 20px 0px 20px;
+	}
+
+	#name {
+		width: 30%;
+	}
+
+	.palette_color {
+		height: 12vw;
+    	width: 12vw;
+    	margin: 2% 4%;
+	}
+}

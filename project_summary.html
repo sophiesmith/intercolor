@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project Summary</title>
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: #c9ebff;
+			margin: 50px;
+		}
+
+		#outer {
+			width: 70%;
+			margin: auto;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="outer">
+	<h1>Final Project Summary - Intercolor</h1>
+	<h3>Purpose</h3>
+		<p><a href="index.html">Intercolor</a> is a site intended to train your eye for color, featuring a color sorting game and the ability to create and save color palettes. Aimed toward artists, designers, or anyone interested in improving their use of color.</p>
+	<h3>How to Use</h3>
+		<p>You can use Intercolor either as a guest or with an account. </p>
+		<p>A guest can play the color sorting game, but cannot submit their scores. A guest can use the palette creator, but cannot actually save palettes.</p>
+		<p>You can make an account by clicking the "sign up" button on the home page or clicking the profile tab, which will redirect you to sign up if you are not logged in. All you need is a username and password to make an account.</p>
+		<p>Once you have an account, you can submit your scores to the high score boards for the color sorting game, and you can also save palettes. In your profile, you can see your best score, average score, and all your saved palettes. Here, you have the option to edit your palettes. You can also delete your palette on the edit page. </p>
+		<p>To play the color sorting game, drag and drop the colors such that it forms a correct gradient going from the start color to the end color. Score is based on your number of moves.</p>
+		<p>To use the palette creator, use the color picker to select the color you want and press "save color." You can delete colors once you've added them. You need 6 colors and a palette name for it to successfully save.</p>
+	<h3>The Database</h3>
+		<p>All data is provided either by myself or by users. User provided data is obtained through forms. There are 4 tables: games, palettes, scores, and users. </p>
+		<p>The games table stores the hex codes of the 10 colors used in a single color sorting game. I manually entered this data. </p>
+		<p>The palettes table stores the hex codes of the 6 colors required for a palette, and the id of the user who created it. This data comes from the users.</p>
+		<p>The scores table stores the number of moves a player used to win a game (the score), the id of the game that was played, and the id of the user. The data comes from the users.</p>
+		<p>The users table stores the user's username, password (stored as hash), average score, best score, and number of games played. The data comes from the users.</p>
+	<h3>Interactivity</h3>
+		<p>I have several click handlers for various buttons on my website. Besides buttons that link to other pages, there is a "reshuffle" and "submit" button on the Play page. The "reshuffle" button rearranges the colors in a random order, and the "submit" button tests your color sorting for correctness and displays the results. Of course, all the color squares are drag and droppable.</p>
+		<p>On the palette page, the "save color" button saves the currently selected color to your palette - each square that holds the color also has a remove button when you hover over it that allows you to remove the color. The save palette button saves your palette to the database.</p>
+		<p>On the sign up page, the "sign up" button saves your account to the database. The "log in" button checks your credentials.</p>
+	<h3>Database Diagram</h3>
+		<img src="https://i.imgur.com/a82gyeg.png">
+	<h3>Extras</h3>
+		<ul>
+			<li>Sessions for keeping track of what user is logged in</li>
+			<li>jQuery UI - <a href="https://jqueryui.com/draggable/">Draggable</a> / <a href="https://jqueryui.com/droppable/">Droppable</a> used for dragging and dropping colors in main game</li>
+			<li>jQuery plugin - <a href="https://acko.net/blog/farbtastic-jquery-color-picker-plug-in/">Farbtastic Color Picker</a> used on palette creator page</li>
+			<li>Some CSS animation for button hover effects</li>
+		</ul>
+	</div>
+</body>
+</html>

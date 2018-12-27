@@ -1,0 +1,90 @@
+h3 {
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+	font-size: 36px;
+	width: 40%;
+}
+
+h4 {
+	font-size: 30px;
+}
+
+button {
+	margin: 15px;
+}
+
+.color {
+	width: 20vw;
+	height: 20vw;
+	float: right;
+	clear: right;
+	border: 2px solid transparent;
+}
+
+#c1 {
+	border: 2px solid black;
+}
+
+#c10 {
+	border: 2px solid black;
+}
+
+.hover-square {
+	border: 2px solid black;
+}
+
+#scores {
+	display: none;
+	width: 30%;
+	margin: auto;
+}
+
+#restart {
+	margin: 0;
+}
+
+#game {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#buttons {
+	display: flex;
+	justify-content: center;
+}
+
+
+@media (min-width: 768px) {
+	h3 {
+		width: 100%;
+		float: none;
+		margin: 5% 0 5% 0;
+	}
+
+	.color {
+		width: 9vw;
+		height: 9vw;
+		float: left;
+		clear: none;
+	}
+
+	button {
+		margin: 50px 100px 0px 100px;
+	}
+
+	#game {
+		flex-direction: row;
+	}
+}
+
+@media (min-width: 992px) {
+	.color {
+		width: 9.5vw;
+		height: 9.5vw;
+	}
+}
+
+@media(min-width: 1200px) {
+	
+}

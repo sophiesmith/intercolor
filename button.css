@@ -1,0 +1,39 @@
+.primary {
+	background-color: #FFC300;
+	font-family: 'Lato', sans-serif;
+	color: white;
+	font-weight: 700;
+	font-style: italic;
+	border: none;
+	font-size: 20px;
+	border-radius: 20px;
+	padding: 5px 15px 7px 15px;
+	transition: box-shadow 0.5s;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.primary:hover {
+    box-shadow: -5px 5px 0px 0px #002D9F;
+}
+
+.primary:focus {
+	outline: none;
+	background-color: #ECCD66;
+}
+
+.danger {
+	background-color: #ff4f0f;
+}
+
+.danger:hover {
+	box-shadow: -5px 5px 0px 0px #8e8c86;
+}
+
+.success {
+	background-color: #85f95e;
+}
+
+.success:hover {
+	box-shadow: -5px 5px 0px 0px #8e8c86;
+}

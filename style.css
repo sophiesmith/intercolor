@@ -1,0 +1,22 @@
+#outer {
+	margin: auto;
+	font-family: 'Lato', sans-serif;	
+	text-align: center;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#logo {
+	position: fixed;
+	width: 40px;
+	bottom: 10;
+	left: 10;
+}
+
+@media (min-width: 768px) {
+	#outer {
+		flex-direction: column;
+	}
+}
